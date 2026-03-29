@@ -133,7 +133,7 @@ img { max-width: 100%; height: auto; display: block; }
 .section__line {
   width: 50px;
   height: 2px;
-  background: var(--red);
+  background: var(--gold);
   margin-bottom: 2.5rem;
 }
 
@@ -152,7 +152,7 @@ img { max-width: 100%; height: auto; display: block; }
 
 .parcours__item {
   padding: 0.8rem 0;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--gold);
 }
 
 .parcours__item-title {
@@ -181,7 +181,7 @@ img { max-width: 100%; height: auto; display: block; }
 
 .mises-en-scene__list li {
   padding: 0.6rem 0;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--gold);
   font-size: 1rem;
   color: var(--text-dark);
 }
@@ -272,9 +272,18 @@ img { max-width: 100%; height: auto; display: block; }
   <p>Metteur en scène de théâtre et pédagogue, Frédéric de Goldfiem a été comédien permanent des troupes du Théâtre National de Nice sous la direction de Daniel Benoin et Muriel Mayette-Holtz pendant 10 ans.</p>
 </div>
 
+<!-- NAVIGATION -->
+<nav style="background:#1a1a1a;padding:0.8rem 1rem;text-align:center;position:sticky;top:0;z-index:100;border-bottom:2px solid #C4A265;display:flex;flex-wrap:wrap;justify-content:center;gap:0.4rem 0;">
+  <a href="#theatre" style="color:rgba(255,255,255,0.7);text-decoration:none;font-family:var(--font);font-size:0.72rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;padding:0.3rem 0.6rem;transition:color 0.2s;">Théâtre</a>
+  <a href="#mises-en-scene" style="color:rgba(255,255,255,0.7);text-decoration:none;font-family:var(--font);font-size:0.72rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;padding:0.3rem 0.6rem;transition:color 0.2s;">Mises en scène</a>
+  <a href="#cinema" style="color:rgba(255,255,255,0.7);text-decoration:none;font-family:var(--font);font-size:0.72rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;padding:0.3rem 0.6rem;transition:color 0.2s;">Cinéma</a>
+  <a href="#formation" style="color:rgba(255,255,255,0.7);text-decoration:none;font-family:var(--font);font-size:0.72rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;padding:0.3rem 0.6rem;transition:color 0.2s;">Formation</a>
+</nav>
+
 <!-- THEATRE -->
 <section class="section">
   <div class="container">
+    <a id="theatre"></a>
     <h2 class="section__title">Théâtre — Comédien</h2>
     <div class="section__line"></div>
 
@@ -366,6 +375,7 @@ img { max-width: 100%; height: auto; display: block; }
 <!-- MISE EN SCENE -->
 <section class="section section--alt">
   <div class="container">
+    <a id="mises-en-scene"></a>
     <h2 class="section__title">Mises en scène</h2>
     <div class="section__line"></div>
     <ul class="mises-en-scene__list">
@@ -380,6 +390,7 @@ img { max-width: 100%; height: auto; display: block; }
 <!-- CINEMA -->
 <section class="section">
   <div class="container">
+    <a id="cinema"></a>
     <h2 class="section__title">Cinéma</h2>
     <div class="section__line"></div>
     <div class="parcours__item">
@@ -393,6 +404,7 @@ img { max-width: 100%; height: auto; display: block; }
 <!-- FORMATION -->
 <section class="section section--alt">
   <div class="container">
+    <a id="formation"></a>
     <h2 class="section__title">Formation</h2>
     <div class="section__line"></div>
     <p class="formation__item"><strong>École de la Comédie de Saint-Étienne</strong> <span>— 1996-1999</span></p>
@@ -405,7 +417,7 @@ img { max-width: 100%; height: auto; display: block; }
   <p class="contact__name">Frédéric de Goldfiem</p>
   <p class="contact__info">
     <a href="mailto:Fred-degoldfiem@outlook.fr">Fred-degoldfiem@outlook.fr</a><br>
-    06 30 18 69 03
+    +33 6 30 18 69 03
   </p>
   <div class="contact__back">
     <a href="index.html">← Retour au dossier de presse</a>
