@@ -162,7 +162,7 @@ img { max-width: 100%; height: auto; display: block; }
 .equipe__member {
   margin-bottom: 3.5rem;
   padding-bottom: 2.5rem;
-  border-bottom: 1px solid rgba(255,255,255,0.08);
+  border-bottom: 1px solid #C4A265;
 }
 
 .equipe__member:last-of-type { border-bottom: none; margin-bottom: 1.5rem; padding-bottom: 0; }
@@ -195,7 +195,7 @@ img { max-width: 100%; height: auto; display: block; }
   color: #6b6560;
   margin-top: 3rem;
   padding-top: 2rem;
-  border-top: 1px solid rgba(255,255,255,0.1);
+  border-top: 1px solid #C4A265;
 }
 
 /* ============ TEXTE PUBLIE ============ */
@@ -384,9 +384,21 @@ section { overflow: visible !important; position: relative !important; }
   Administrateur : Pascal Bracquemond · pascal.presqueuneile@gmail.com · +33 6 64 16 87 11
 </div>
 
+<!-- NAVIGATION -->
+<nav style="background:#1a1a1a;padding:0.8rem 1rem;text-align:center;position:sticky;top:0;z-index:100;border-bottom:2px solid #C4A265;display:flex;flex-wrap:wrap;justify-content:center;gap:0.4rem 0;">
+  <a href="#fiche" style="color:rgba(255,255,255,0.7);text-decoration:none;font-family:var(--font);font-size:0.72rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;padding:0.3rem 0.6rem;">Fiche</a>
+  <a href="#resume" style="color:rgba(255,255,255,0.7);text-decoration:none;font-family:var(--font);font-size:0.72rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;padding:0.3rem 0.6rem;">Résumé</a>
+  <a href="#note" style="color:rgba(255,255,255,0.7);text-decoration:none;font-family:var(--font);font-size:0.72rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;padding:0.3rem 0.6rem;">Note d'intention</a>
+  <a href="#equipe" style="color:rgba(255,255,255,0.7);text-decoration:none;font-family:var(--font);font-size:0.72rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;padding:0.3rem 0.6rem;">Équipe</a>
+  <a href="#presse" style="color:rgba(255,255,255,0.7);text-decoration:none;font-family:var(--font);font-size:0.72rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;padding:0.3rem 0.6rem;">Presse</a>
+  <a href="#fiche-technique" style="color:rgba(255,255,255,0.7);text-decoration:none;font-family:var(--font);font-size:0.72rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;padding:0.3rem 0.6rem;">Fiche technique</a>
+  <a href="#flor" style="color:#C4A265;text-decoration:none;font-family:var(--font);font-size:0.72rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;padding:0.3rem 0.6rem;">Flor Lurienne</a>
+  <a href="#fred" style="color:#C4A265;text-decoration:none;font-family:var(--font);font-size:0.72rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;padding:0.3rem 0.6rem;">Frédéric de Goldfiem</a>
+</nav>
+
 
 <!-- 2. FICHE TECHNIQUE -->
-<section class="fiche section-padding">
+<section id="fiche" class="fiche section-padding">
   <div class="container">
     <h2 class="section-title">Le Lave-Vaisselle</h2>
     <div class="accent-line"></div>
@@ -425,7 +437,7 @@ section { overflow: visible !important; position: relative !important; }
 
 
 <!-- 3. RÉSUMÉ -->
-<section class="resume section-padding">
+<section id="resume" class="resume section-padding">
   <div class="container">
     <h2 class="section-title">Résumé</h2>
     <div class="accent-line"></div>
@@ -437,7 +449,7 @@ section { overflow: visible !important; position: relative !important; }
 
 
 <!-- 4. NOTE D'INTENTION -->
-<section class="note section-padding">
+<section id="note" class="note section-padding">
   <div class="container">
     <h2 class="section-title">Note d'intention</h2>
     <div class="accent-line"></div>
@@ -476,20 +488,20 @@ section { overflow: visible !important; position: relative !important; }
 
 
 <!-- 7. L'ÉQUIPE -->
-<section class="equipe section-padding">
+<section id="equipe" class="equipe section-padding">
   <div class="container">
-    <h2 class="section-title" style="color:var(--blue-title);">L'Équipe</h2>
+    <h2 class="section-title" style="color:#C4A265;">L'Équipe</h2>
     <div class="accent-line"></div>
 
     <div class="equipe__member">
-      <h3 class="equipe__member-name">Flor Lurienne</h3>
+      <a id="flor"></a><h3 class="equipe__member-name"><a href="flor.html" style="color:#fff;text-decoration:none;border-bottom:1px solid #C4A265;">Flor Lurienne</a></h3>
       <p class="equipe__member-role">Comédienne, Autrice</p>
       <p class="equipe__member-bio"><strong style="color:#e8e4df;">Comédienne :</strong> Au théâtre elle a travaillé sur des créations contemporaines avec, entre autres Gilles Zaepffel, Gilles Dao, Mathieu Mével, François Delaive, Marcel Maréchal, Kazem Shahryari, Jean-Lambert Wild, Pierre Pradinas, Valéry Rybakov, Jacques Bonnaffé, Marina Tomé, Joël Jouanneau, Armand Eloi, Catherine Javaloyes, Frédéric de Goldfiem. Au cinéma elle a joué dans plusieurs premiers films dont celui de Germinal Alvarez (<em>L'autre vie de Richard Kemp</em>) et de Sou Abadie (<em>Cherchez la femme</em>). On peut aussi la voir dans la série <em>HPI</em>.</p>
       <p class="equipe__member-bio" style="margin-top:1rem;"><strong style="color:#e8e4df;">Autrice :</strong> Elle écrit avec Léonore Chaix <em>Déshabillez mots</em> pour France Inter. Cette série remporte le Prix Scam et a été adaptée pour la scène en deux spectacles et jouée par le duo pendant une décennie. Les éditions Flammarion et l'Avant-scène publient leurs textes de radio et de théâtre. France Culture programme leurs micro-fictions : <em>Y'a pas que Marie Curie dans la vie</em>. Elle vient de signer son premier roman <em>Rita trace sa route</em> aux éditions Velvet et travaille à son adaptation cinématographique.</p>
     </div>
 
     <div class="equipe__member">
-      <h3 class="equipe__member-name">Frédéric de Goldfiem</h3>
+      <a id="fred"></a><h3 class="equipe__member-name"><a href="frederic.html" style="color:#fff;text-decoration:none;border-bottom:1px solid #C4A265;">Frédéric de Goldfiem</a></h3>
       <p class="equipe__member-role">Comédien, Metteur en scène</p>
       <p class="equipe__member-bio">Formé à l'école de la comédie de Saint-Étienne. Comédien permanent de la troupe du Théâtre National de Nice sous la direction de Daniel Benoin, puis de Muriel Mayette. Il a travaillé, également et entre autres, sous la direction de : Krzysztof Warlikowski, Antoine Bourseiller, Anne-Marie Lazarini, Dusan Jovanovic, Pierre Pradinas, Mathieu Cruciani, Robert Cantarella... De 2009 à 2015, il joue en France et en Europe francophone, notamment au Luxembourg. Au Théâtre National de Nice, il signe la mise en scène d'une quinzaine de pièces, essentiellement du répertoire contemporain ou des créations collectives. En 2013, il rejoint la compagnie LE DIRE-DIRE qui développe un travail de recherche à partir d'écritures au plateau. Leur dernière création <em>Dissonance Jeanne d'Arc</em>, a été programmée au festival d'Avignon 2025, théâtre des Carmes.</p>
     </div>
@@ -522,7 +534,7 @@ section { overflow: visible !important; position: relative !important; }
 
 
 <!-- 9. PRESSE -->
-<section class="presse section-padding">
+<section id="presse" class="presse section-padding">
   <div class="container">
     <h2 class="section-title">Presse</h2>
     <div class="accent-line"></div>
@@ -576,6 +588,7 @@ section { overflow: visible !important; position: relative !important; }
 
 
 <!-- 11. FICHE TECHNIQUE -->
+<a id="fiche-technique"></a>
 <section class="section-padding" style="background:var(--cream);border-top:1px solid #e0e0e0;">
   <div class="container">
     <h2 class="section-title">Fiche technique</h2>
