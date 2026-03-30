@@ -38,7 +38,7 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* ============ HERO ============ */
 .hero {
-  min-height: 100vh;
+  min-height: auto; padding-top: 5rem; padding-bottom: 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -277,6 +277,19 @@ img { max-width: 100%; height: auto; display: block; }
   .link-card__image { height: 180px; }
   .hero { padding: 3rem 1.5rem; }
 }
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 3rem 1.5rem !important;
+  }
+  .hero__company-name {
+    font-size: 2rem;
+  }
+  .link-card__image {
+    height: 200px;
+  }
+}
+
 </style>
 </head>
 <body>

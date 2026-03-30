@@ -251,6 +251,25 @@ img { max-width: 100%; height: auto; display: block; }
   .section { padding: 3rem 0; }
   .hero__overlay { padding: 2rem 1.5rem 1.5rem; }
 }
+
+@media (max-width: 768px) {
+  .hero__image-wrapper img {
+    min-height: 70vh;
+    object-fit: cover;
+    object-position: center 15%;
+  }
+  .hero__overlay {
+    padding: 1rem 1.5rem 1rem;
+  }
+  .hero__name {
+    font-size: 1.6rem;
+  }
+  .hero__role {
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+  }
+}
+
 </style>
 </head>
 <body>
